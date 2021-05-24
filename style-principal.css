@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background-color: rgb(18, 78, 168);
+}
+
+.title {
+    margin-left: 25px;
+    color: white;
+}
+
+.botones {
+    padding: 5px;
+    margin-left: 25px;
+    border-radius: 15px;
+    border-color: white;
+    box-shadow: inset 5px 5px 5px 0 white;
+    background-color: rgb(213, 222, 230);
+    cursor: pointer;
+}
+
+.botones:hover {
+    background-color: rgb(212, 223, 233);
+    box-shadow: inset 5px 5px 5px 0 black;
+}
