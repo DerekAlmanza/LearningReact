@@ -10,6 +10,7 @@ body {
 
 .botones {
     padding: 5px;
+    margin-bottom: 25px;
     margin-left: 25px;
     border-radius: 15px;
     border-color: white;
