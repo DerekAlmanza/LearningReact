@@ -1,6 +1,8 @@
 # LearningReact
 Repositorio creado para aprender React, publicado para aprendizaje propio y para quien le sirva.
 
+Cada carpeta numerada en la raíz del repositorio es un proyecto creado con React.
+
 ## Autor. 👤
 
 Almanza Infante Derek.
@@ -18,3 +20,6 @@ También puede ver la página desde aquí: https://derekalmanza.github.io/Learni
 2. Repaso de JS.
     * Constantes y variables.
     * Template Strings.
+    * Objetos.
+    * Arreglos.
+    * Funciones.
