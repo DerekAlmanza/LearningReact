@@ -7,7 +7,7 @@ console.log(propietarios);
 
 // Ejercicio. Obtener heroe por medio del id.
 
-const getHeroById = (id) => {
+export const getHeroById = (id) => {
     return heroes.find(heroe => heroe.id === id);
 }
 
