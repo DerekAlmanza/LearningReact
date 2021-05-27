@@ -23,3 +23,10 @@ También puede ver la página desde aquí: https://derekalmanza.github.io/Learni
     * Objetos.
     * Arreglos.
     * Funciones.
+    * Desestructuración de objetos.
+    * Desestructuración de arreglos.
+    * Import y Export.
+    * Promises.
+    * FetchAPI.
+    * Async - Await.
+    * Operador ternario.
