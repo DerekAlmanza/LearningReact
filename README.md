@@ -31,3 +31,7 @@ También puede ver la página desde aquí: https://derekalmanza.github.io/Learni
     * Async - Await.
     * Operador ternario.
 03. Counter App.
+    * Componentes.
+    * Retornar fragmentos <></>
+    * Imprimir variables.
+    * Propiedades.
