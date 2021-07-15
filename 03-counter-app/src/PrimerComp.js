@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Functional components.
+// Componentes funcionales.
 const PrimerComp = () => {
     return <h1>HOLA MUNDO</h1>;
 }
