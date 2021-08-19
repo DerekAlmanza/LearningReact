@@ -1,4 +1,3 @@
-
 import { getUsuario, getUsuarioActivo } from '../../bases/funciones';
 
 describe('Pruebas en funciones.test.js', () => {
