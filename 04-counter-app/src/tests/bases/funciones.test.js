@@ -1,3 +1,4 @@
+import '@testing-library/jest-dom';
 import { getUsuario, getUsuarioActivo } from '../../bases/funciones';
 
 describe('Pruebas en funciones.test.js', () => {
@@ -12,7 +13,7 @@ describe('Pruebas en funciones.test.js', () => {
             username: 'Ferras'
         }
 
-        // No funciona el toBe ya que aunque los objetos son los mismos están apuntando 
+        // No funciona el toBe ya que aunque el contenido los objetos son los mismos están apuntando 
         // a una dirección de memoria distinta.
         // expect( usuario ).toBe( usuarioTest );
         expect( usuario ).toEqual( usuarioTest );

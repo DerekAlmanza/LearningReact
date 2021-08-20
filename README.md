@@ -55,7 +55,7 @@ Temas a ver:
     * Arreglos.
     * Funciones. (_Testeado_)
     * Desestructuración de objetos.
-    * Desestructuración de arreglos.
+    * Desestructuración de arreglos. (_Testeado_)
     * Import y Export.
     * Promises.
     * FetchAPI.
