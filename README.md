@@ -56,10 +56,10 @@ Temas a ver:
     * Funciones. (_Testeado_)
     * Desestructuración de objetos.
     * Desestructuración de arreglos. (_Testeado_)
-    * Import y Export.
-    * Promises.
+    * Import y Export. (_Testeado_)
+    * Promises. (_Testeado_)
     * FetchAPI.
-    * Async - Await.
+    * Async - Await. (_Testeado_)
     * Operador ternario.
 03. Counter App.
     * Componentes.

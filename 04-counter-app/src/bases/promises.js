@@ -2,38 +2,21 @@
 
 import {getHeroById} from './importExport'
 
-// Forma de hacerlo sin una función. 
+export const obtenerHeroeAsync = (id) => {
 
-// const promesa = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
 
-//     const heroe = getHeroById(5);
+        setTimeout(() => {
 
-//     if (!heroe) reject('El héroe no se ha encontrado');
-//     else resolve(heroe);
-
-// });
-
-// promesa
-//     .then(heroe => {
-//         console.log(heroe);
-//     })
-//     .catch(err => console.log(err));
-
-const obtenerHeroe = (id) => {
-
-    const promesa = new Promise((resolve, reject) => {
-
-        const heroe = getHeroById(id);
+            const heroe = getHeroById(id);
     
-        if (!heroe) reject('El héroe no se ha encontrado');
-        else resolve(heroe);
-    
+            if (!heroe) reject('El héroe no se ha encontrado');
+            else resolve(heroe);
+        }, 500)
     });
-
-    return promesa;
 
 }
 
-obtenerHeroe(5)
-    .then(heroe => console.log(heroe))
-    .catch(err => console.warn(err));
+// obtenerHeroe(5)
+//     .then(heroe => console.log(heroe))
+//     .catch(err => console.warn(err));
