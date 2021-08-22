@@ -27,7 +27,7 @@ ReactDOM.render( < RetornarFragmento />, root2);
 ReactDOM.render( < ImprimirVars />, root3);
 ReactDOM.render( < Propiedades saludoProp='Hola este es un prop'/>, root4);
 // ReactDOM.render( < PropiedadesOtraForma />, root4);
-ReactDOM.render( < RetornarPropTypes saludo={ 123 } saludo2= { 234 } />, root5);
+ReactDOM.render( < RetornarPropTypes saludo={ '123' } saludo2= { '234' } />, root5);
 ReactDOM.render( < RetornarDefaultPropTypes />, root6)
 
 

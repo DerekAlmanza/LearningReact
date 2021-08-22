@@ -61,9 +61,11 @@ Temas a ver:
     * FetchAPI.
     * Async - Await. (_Testeado_)
     * Operador ternario.
-03. Counter App.
+03. Props.
     * Componentes.
     * Retornar fragmentos <></>
     * Imprimir variables.
-    * Propiedades.
+    * Propiedades. (_Testeado_)
     * Principio de Hooks.
+04. Counter App.
+    * Counter App Creado.

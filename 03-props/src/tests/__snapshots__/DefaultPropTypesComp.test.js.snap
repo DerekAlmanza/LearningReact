@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de DefaultPropTypes.test.js Debe de mostrar <RetornarDefaultPropTypes/> correctamente 1`] = `
+<Fragment>
+  <h2>
+     
+    Hola, soy Simón
+     
+  </h2>
+  <h3>
+     
+    Este es un subtítulo generado por defecto con defaultProps
+     
+  </h3>
+</Fragment>
+`;
