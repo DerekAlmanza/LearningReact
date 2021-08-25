@@ -35,7 +35,7 @@ const CounterApp = ( { value = 0 }) => {
     return (
     	<>
     		<h1>CounterApp</h1>
-    		<h2> { contador } </h2>
+    		<h2>{ contador }</h2>
 
         	{/* Otras maneras de escribir la función onClick */}
         	{/* <button onClick={ () => {

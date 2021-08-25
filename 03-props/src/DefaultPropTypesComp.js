@@ -7,7 +7,7 @@ const RetornarDefaultPropTypes = ( {saludo, subtitulo }) => {
     return (
         <>
             <h2> {saludo} </h2>
-            <h3> {subtitulo} </h3>
+            <h3>{subtitulo}</h3>
         </>
     )
 }

@@ -8,9 +8,7 @@ exports[`Pruebas de DefaultPropTypes.test.js Debe de mostrar <RetornarDefaultPro
      
   </h2>
   <h3>
-     
     Este es un subtítulo generado por defecto con defaultProps
-     
   </h3>
 </Fragment>
 `;

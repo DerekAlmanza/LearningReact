@@ -67,5 +67,5 @@ Temas a ver:
     * Imprimir variables.
     * Propiedades. (_Testeado_)
     * Principio de Hooks.
-04. Counter App.
+04. Counter App. (_Testeado_)
     * Counter App Creado.
