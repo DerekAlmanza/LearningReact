@@ -40,7 +40,7 @@ Temas a ver:
 * Jest
 * Expect
 * toBe
-* Enzyme
+* Enzyme: `npm install --save-dev @wojtekmaj/enzyme-adapter-react-17`
 * Comandos útiles en la terminal para pruebas.
 * Revisar elementos renderizados en el componente.
 * Simular eventos
@@ -48,7 +48,9 @@ Temas a ver:
 ## Apps creadas con React: 💻
 
 1. Intro a React.
+
 2. Repaso de JS.
+
     * Constantes y variables.
     * Template Strings. (_Testeado_)
     * Objetos.
@@ -62,10 +64,23 @@ Temas a ver:
     * Async - Await. (_Testeado_)
     * Operador ternario.
 03. Props.
+
     * Componentes.
     * Retornar fragmentos <></>
     * Imprimir variables.
     * Propiedades. (_Testeado_)
     * Principio de Hooks.
 04. Counter App. (_Testeado_)
+
     * Counter App Creado.
+
+05. GifExpertApp.
+
+    * Custom Hooks.
+    * Fetch a una API.
+    * COmunicación entre componentes.
+    * Clases de CSS.
+    * Animaciones. 
+    * Enviar métodos como argumentos.
+    * Crear listados.
+    * Keys
