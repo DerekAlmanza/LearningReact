@@ -76,6 +76,9 @@ Temas a ver:
 
 05. GifExpertApp.
 
+    * UseState.
+    * Comunicación entre componentes.
+    * UseEffect.
     * Custom Hooks.
     * Fetch a una API.
     * COmunicación entre componentes.
