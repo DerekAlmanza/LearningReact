@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { GifGridItemComp } from './GifGridItemComp';
 
 export const GifGridComp = ( {categoria} ) => {
 
-    // const [contador, setContador] = useState(0);
+    const [imagenes, setImagenes] = useState([]);
 
     // UseEffect sirve para ejecutar código a partir de una condicional
     useEffect(() => {
@@ -26,12 +27,21 @@ export const GifGridComp = ( {categoria} ) => {
             }
         })
 
-        console.log(gifs);
+        setImagenes(gifs);
     }
 
     return (
         <>
-            <h3> {categoria} </h3>
+            <h3> {categoria.toUpperCase()} </h3>
+            <div className="organiza-items">
+                {
+                    imagenes.map((imagen) => {
+                        return (
+                            <GifGridItemComp key={imagen.id} {...imagen} />
+                        )
+                    })
+                }
+            </div>
         </>
     )
 }

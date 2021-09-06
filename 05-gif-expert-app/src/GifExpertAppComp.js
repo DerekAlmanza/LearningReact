@@ -34,8 +34,7 @@ const GifExpertApp = () => {
                     // Key es el id único de cada elemento
                     return (
                         <div key={categoria}>
-                            <li> {categoria} </li>
-                            <GifGridComp categoria={categoria}/>
+                            <li> <GifGridComp categoria={categoria}/> </li>
                         </div>
                     )
                 })

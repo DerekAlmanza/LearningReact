@@ -95,3 +95,31 @@ input {
     letter-spacing: 2px;
     color: #fff;
 }
+
+.organiza-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagen {
+    padding: 30px;
+    margin: 25px;
+    background-color: #0d0a38;
+    box-shadow: inset 0 5px 10px white;
+}
+
+.imagen__estilo {
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.titulo-imagen__estilo {
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+}
