@@ -23,7 +23,7 @@ export const AgregarCategoria = ({setCategorias, categorias}) => {
 	const agregaCategoria = () => {
 
 		if( value.trim().length > 1) {
-			setCategorias([...categorias, value]);
+			setCategorias([value, ...categorias]);
 			setValue('');
 		}
 	}

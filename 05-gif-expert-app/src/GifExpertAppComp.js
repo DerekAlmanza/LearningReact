@@ -28,18 +28,18 @@ const GifExpertApp = () => {
 
         {/* <button onClick={agregarCategoria}> Agregar </button> */}
 
-        <ol className='lista__categorias'>
+        <div className='lista__categorias'>
             {
                 categorias.map((categoria) => {
                     // Key es el id único de cada elemento
                     return (
                         <div key={categoria}>
-                            <li> <GifGridComp categoria={categoria}/> </li>
+                            <GifGridComp categoria={categoria}/>
                         </div>
                     )
                 })
             }
-        </ol>
+        </div>
     </>);
 }
 

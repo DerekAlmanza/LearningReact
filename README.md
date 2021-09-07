@@ -45,6 +45,10 @@ Temas a ver:
 * Revisar elementos renderizados en el componente.
 * Simular eventos
 
+### ***Custom Hooks***
+Manera de extraer funcionalidades de algún componente ya realizado pero usar este método y manejar su información de una manera más sencilla.
+El estándar aceptado es colocar antes del nombre de archivo un *use*. p.e `useMiHookPersonalizado.js`.
+
 ## Apps creadas con React: 💻
 
 1. Intro a React.
@@ -79,11 +83,11 @@ Temas a ver:
     * UseState.
     * Comunicación entre componentes.
     * UseEffect.
-    * Custom Hooks.
-    * Fetch a una API.
-    * COmunicación entre componentes.
-    * Clases de CSS.
-    * Animaciones. 
-    * Enviar métodos como argumentos.
-    * Crear listados.
     * Keys
+    * Fetch a una API.
+    * Comunicación entre componentes.
+    * Clases de CSS.
+    * Helpers - Métodos Auxiliares.
+    * Custom Hooks.
+    * Enviar métodos como argumentos.
+    
