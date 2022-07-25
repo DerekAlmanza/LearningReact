@@ -1,20 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react";
+import { obtenerGif } from "../helpers/obtenerGif";
 
 /**
-    *  Hook para obtener imagen y pantalla de carga de manera automática.
-*/
-export const useFetchGifs = () => {
-    const [state, setstate] = useState( {
-        data: [],
-        loading: true
-    })
+ *  Hook para obtener imagen y pantalla de carga de manera automática.
+ */
+export const useFetchGifs = (categoria) => {
+  const [state, setState] = useState({
+    data: [],
+    loading: true,
+  });
 
-    // setTimeout(() => {
-    //     setstate({
-    //         data: [1,2,3,4,5],
-    //         loading: false
-    //     })
-    // }, 3000);
+  useEffect(() => {
+    obtenerGif(categoria).then((imagenes) => {
+      setState({
+        data: imagenes,
+        loading: false,
+      });
+    });
+  }, [categoria]);
 
-    return state;
-}
+  return state;
+};

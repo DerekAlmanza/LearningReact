@@ -7,7 +7,7 @@ export const GifGridComp = ( {categoria} ) => {
 
     const [imagenes, setImagenes] = useState([]);
 
-    const {data, loading} = useFetchGifs();
+    const {data, loading} = useFetchGifs(categoria);
 
     // UseEffect sirve para ejecutar código a partir de una condicional
     useEffect(() => {
@@ -19,7 +19,7 @@ export const GifGridComp = ( {categoria} ) => {
     return (
         <>
             <h3> {categoria.toUpperCase()} </h3>
-            {loading ? 'cargando custom hook...' : 'custom hook cargado'}
+            {loading && <p className='animate__animated animate__flash'>Loading</p>}
             <div className="organiza-items">
                 {
                     imagenes.map((imagen) => {
