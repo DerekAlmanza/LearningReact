@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes  from 'prop-types';
 
-export const GifGridItemComp = ( {id, title, url}) => {
+export const GifGridItemComp = ( {title, url}) => {
 
     return (    
         <div className="contenedor-imagen animate__animated animate__backInDown">

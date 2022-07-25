@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import React from "react";
 import { GifGridItemComp } from '../../src/components/GifGridItemComp';
 
 describe('Pruebas en <GifGridItemComp />', () => {
@@ -18,6 +17,20 @@ describe('Pruebas en <GifGridItemComp />', () => {
 
         render(<GifGridItemComp title={title} url={url}/>);
         //screen.debug(); //análogo a un console.log() pero para mostrarlo en tests.
-        console.log( screen.findAllByRole('img'));
+        //expect( screen.getByRole('img').src).toBe(url); // Obtiene el src y el alt de la imagen y comprueba si es el mismo
+        //expect( screen.getByRole('img').alt).toBe(title);
+
+        // La mejor manera de hacerlo
+        const {src, alt} = screen.getByRole('img');
+        expect(src).toBe(url);
+        expect(alt).toBe(title);
     })
+
+    test('Debe de mostrar el título del Gif en el componente', () => {
+
+        render(<GifGridItemComp title={title} url={url} />);
+
+        expect(screen.getByText(title)).toBeTruthy();
+    })
+
 });
