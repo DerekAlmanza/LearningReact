@@ -18,8 +18,9 @@ describe('Pruebas en <AgregarCategoriaComp/>', () => {
     });
 
     test(' Debe de llamar a setCategorias si el input tiene un valor ', () => {
+        const setCategorias = jest.fn(); // Creando una función con jest
 
-        render(<AgregarCategoria setCategorias={ () => {} }/>);
+        render(<AgregarCategoria setCategorias={ setCategorias }/>);
 
         const  input = screen.getByRole('textbox');
         const form = screen.getByRole('form');
@@ -28,5 +29,21 @@ describe('Pruebas en <AgregarCategoriaComp/>', () => {
         fireEvent.submit( form ); // Dispara el evento de submit del valor form.
         
         expect( input.value ).toBe(''); // Esto porque al actualizarse el form con el submit, vuelve a una cadena vacía
+
+        expect(setCategorias).toHaveBeenCalled(); // Con esto nos aseguramos que la función esté siendo llamada
+        // expect(setCategorias).toHaveBeenCalledTimes(2); Esto si queremos testear que la función fue llamada determinado número de veces
+        
+    });
+
+    test('No debe de llamar al setCategorias si el input está vacío', () => {
+        const setCategorias = jest.fn(); // Creando una función con jest
+
+        render(<AgregarCategoria setCategorias={ setCategorias }/>);
+
+        const form = screen.getByRole('form');
+
+        fireEvent.submit( form ); // Dispara el evento de submit del valor form.
+
+        expect(setCategorias).not.toHaveBeenCalled();
     });
 });
